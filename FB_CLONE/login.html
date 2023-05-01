@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Here</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+
+
+
+
+</head>
+
+
+<style>
+	
+	html{
+		font-size: 62.5%;
+	}
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: var(--font2);
+		text-decoration: none;
+
+
+	}
+	:root{
+	--font1:'Lato', sans-serif;
+	--font2: 'Montserrat', sans-serif;
+	--blue:#0014FF;
+	--lightblue:#8b9dc3;
+	--white:#e5e9f1;
+	--grey:#dfe3ee;
+	--green:#3EC70B;
+	--shad:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+body{
+	height: 100vh;
+	width: 100%;
+	background: var(--grey);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+.logo{
+	font-family: sans-serif;
+	color: var(--blue);
+	font-weight: 1100;
+	font-size: 4rem;
+	margin-bottom: 1rem;
+}
+.text{
+	font-size: 2rem;
+	font-weight: 700;
+}
+.container{
+	
+	
+	display: flex;
+	gap: 7rem;
+	justify-content: center;
+	
+	padding: 6rem;
+
+}
+button{
+	display: inline-block;
+	padding: 1rem 3rem;
+}
+.form{
+	background: var(--white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: var(--shad);
+	
+	padding: 2rem ;
+	border-radius: 10px;
+
+}
+button:hover {
+	cursor: pointer;
+}
+
+.createPage{
+	text-align: center;
+}
+input{
+     width: 100%;
+	display: inline-block;
+	border: .1px solid var(--grey);
+
+	padding: 1rem;
+	margin: .7rem;
+	border-radius: 5px;
+	outline: none;
+}
+.input:focus{
+	border:.1px solid var(--blue);
+}
+
+.submit{
+	background: var(--blue);
+	color: var(--white);
+	font-weight: 1000;
+	border: none;
+		width: 100%;
+		font-size: 1.4rem;
+		margin: .7rem;
+		text-align: center;
+		padding: .8rem 0;
+}
+.forget{
+	font-weight: 500;
+	color: var(--blue);
+	background: transparent;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	font-size: 1rem;
+		width: 100%;
+		text-align: center;
+}
+.create{
+	text-align: center;
+		background: var(--green);
+	padding: 1rem;
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+	color: var(--white);
+	width: 100%;
+	font-weight: 800;
+	border-radius: 3px;
+}
+.createPage{
+	margin-top: 1rem;
+	font-size: 1.1rem;
+}
+.createPage a{
+	text-decoration: underline;
+	font-weight: 800;
+	color: black;
+}
+.welcome-text{
+	padding-top: 7rem;
+	max-width: 40%;
+}
+
+
+</style>
+
+
+<body>
+
+	<section class="container ">
+
+		<div class="welcome-text">
+			<h1 class="logo">Fatebook</h1>
+			<p class="text">
+				Connect with friends and the world around you on Fatebook.
+			</p>
+		</div>
+
+
+		<div class="form-data">
+
+		<form action="" class="form">
+			<input type="text" class="input" placeholder="Enter your email">
+			<input type="password" class="input" placeholder="Password">
+			<a href="index.html" class="submit">Log in</a>
+			<a class="forget" href="">Forget Password?</a>
+			<a class="create" href="">Create new account</a>
+
+		</form>
+		<div class="createPage">
+			<a href="">Create a Page</a>  for a celebrity, brand or business.
+		</div>
+
+</div>
+
+	</section>
+	
+</body>
+</html>
